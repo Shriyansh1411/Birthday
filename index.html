@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love 🤍</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .font-dancing { font-family: 'Dancing Script', cursive; }
+
+        .page { display: none; }
+        .page.active { display: block; }
+
+        .heartbeat {
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'love-pink': '#ff69b4',
+                        'deep-pink': '#db7093',
+                        'romantic-purple': '#9370db',
+                        'soft-pink': '#ffc0cb'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-br from-soft-pink to-white min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="fixed w-full top-0 bg-white/80 backdrop-blur shadow z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2 text-deep-pink font-bold">
+            <i class="fas fa-heart"></i> Happy Birthday
+        </div>
+        <div class="space-x-4">
+            <button onclick="showPage('home')" class="hover:text-love-pink">Home</button>
+            <button onclick="showPage('memories')" class="hover:text-love-pink">Memories</button>
+            <button onclick="showPage('message')" class="hover:text-love-pink">My Message</button>
+        </div>
+    </div>
+</nav>
+
+<main class="pt-24">
+
+<!-- HOME -->
+<div id="home" class="page active">
+    <div class="max-w-4xl mx-auto text-center px-4 py-16">
+        <h1 class="text-5xl md:text-6xl text-deep-pink font-bold heartbeat">
+            Happy Birthday My Love 🎂
+        </h1>
+
+        <p class="mt-6 text-gray-600 text-lg">
+            This little website is my way of telling you how special you are 🤍
+        </p>
+
+        <button onclick="showPage('message')"
+            class="mt-10 bg-gradient-to-r from-love-pink to-romantic-purple text-white px-8 py-4 rounded-full shadow-lg hover:scale-105 transition">
+            💌 Read My Special Message
+        </button>
+
+        <!-- DIALOG BOX -->
+        <div class="mt-12 flex justify-center">
+            <div onclick="showPage('cute')"
+                 class="cursor-pointer bg-white/90 border-2 border-love-pink rounded-2xl p-6 shadow-xl hover:scale-105 transition max-w-sm">
+                <h3 class="text-2xl font-bold text-deep-pink mb-2">
+                    JSTT RANDOMM !!!
+                </h3>
+                <p class="text-gray-600">
+                    What makes my heart melt 🤍
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MEMORIES -->
+<div id="memories" class="page">
+    <div class="max-w-5xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl font-bold text-deep-pink mb-6">
+            Our Memories 💖
+        </h1>
+        <p class="text-gray-600 mb-10">
+            Every moment with you is something I’ll always keep close.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img src="https://picsum.photos/300?1" class="rounded-xl shadow">
+            <img src="https://picsum.photos/300?2" class="rounded-xl shadow">
+            <img src="https://picsum.photos/300?3" class="rounded-xl shadow">
+            <img src="https://picsum.photos/300?4" class="rounded-xl shadow">
+        </div>
+    </div>
+</div>
+
+<!-- MESSAGE -->
+<div id="message" class="page">
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white/90 rounded-3xl shadow-2xl p-8 md:p-12">
+            <h1 class="text-4xl md:text-5xl font-dancing text-deep-pink text-center mb-8 heartbeat">
+                My Special Message For You 🤍
+            </h1>
+
+            <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+                <p>Happpyyyyy Birthdayyyyyyy My Aakriti… my Sukuuu 🤍</p>
+                <p>My cutieee pieee, my chocooo pieeee, my little gummy bear 🥺💕</p>
+                <p>
+                    Today is your birthday, but for me every day with you already feels special.
+                    You are my safe place, my calm, my favorite feeling.
+                </p>
+                <p>
+                    Thank you for choosing me, for forgiving me, for loving me even on hard days.
+                </p>
+                <p class="font-semibold text-deep-pink">
+                    You deserve a life that loves you back as gently and fiercely as you love others.
+                </p>
+                <p class="text-center font-dancing text-xl text-deep-pink">
+                    Happy Birthday my little sa bachhaaaa 💕<br>
+                    muah 😘 muah 😘 muah 😘
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CUTE MOMENTS -->
+<div id="cute" class="page">
+    <div class="max-w-6xl mx-auto px-4 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-dancing text-deep-pink mb-6 heartbeat">
+            A RANDOM THING !
+        </h1>
+
+        <p class="text-gray-600 mb-12">
+            Not perfect pictures. Just you… exactly how I adore you 💕
+        </p>
+
+        <button onclick="showPage('home')"
+            class="mt-14 bg-love-pink text-white px-8 py-3 rounded-full shadow hover:scale-105 transition">
+            ⬅ Back to Home
+        </button>
+    </div>
+</div>
+
+</main>
+
+<!-- SCRIPT -->
+<script>
+    function showPage(pageId) {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        document.getElementById(pageId).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
+
+<!-- CUTE MOM
